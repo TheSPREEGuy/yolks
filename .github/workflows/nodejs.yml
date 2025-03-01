@@ -5,6 +5,7 @@ jobs:
   push:
     name: "yolks:nodejs_${{ matrix.tag }}"
     runs-on: ubuntu-latest
+    environment: env
     strategy:
       fail-fast: false
       matrix:
