@@ -1,10 +1,6 @@
 name: build nodejs
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - nodejs/**
+  workflow_dispatch:
 jobs:
   push:
     name: "yolks:nodejs_${{ matrix.tag }}"
